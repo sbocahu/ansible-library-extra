@@ -146,8 +146,8 @@ def main():
 
     module = AnsibleModule(
         argument_spec = dict(
-           pkg   = dict(required=True),
-           answers  = dict(required=True),
+           pkg   = dict(required=True, type='str'),
+           answers  = dict(required=True, type='dict'),
         )
     )
 
